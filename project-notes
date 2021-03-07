@@ -1,0 +1,46 @@
+connect four notes / thinkpad
+
+function list: 
+
+makeBoard()
+//makeHTML()
+findSpotForCol(x)
+placeIntable(y,x)
+endGame(msg)
+handleclick(evt)
+checkForWin()
+
+
+original htmlmakeoboard function
+function makeHtmlBoard() {
+    // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
+    const htmlBoard = document.getElementById('board')
+
+    // TODO: these varialbes and for loop create the top row of the board
+    const top = document.createElement("tr");
+    top.setAttribute("id", "column-top");
+    top.addEventListener("click", handleClick);
+
+    for (let x = 0; x < WIDTH; x++) {
+        let headCell = document.createElement("td");
+        headCell.setAttribute("id", x);
+        top.append(headCell);
+    }
+    htmlBoard.append(top);
+
+    // TODO: this nested loop creates the the actualy board underneath the top board and sets them to what the height and width are set to
+    for (let y = 0; y < HEIGHT; y++) {
+        const row = document.createElement("tr");
+        for (let x = 0; x < WIDTH; x++) {
+            const cell = document.createElement("td");
+            cell.setAttribute("id", `${y}-${x}`);
+            row.append(cell);
+        }
+        htmlBoard.append(row);
+    }
+}
+
+
+function boardOrganizer(arr){
+arr.
+}
