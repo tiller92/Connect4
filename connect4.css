@@ -1,0 +1,125 @@
+/* game board table */
+
+* {
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    left: 15%;
+}
+
+#game {
+    height: 100vh;
+    width: 100vw;
+}
+
+.h1 {
+    font-family: 'Bangers', cursive;
+    color: orange;
+    position: relative;
+    left: 40%;
+}
+
+#board td {
+    width: 70vh;
+    height: 70vh;
+    border: solid 1px #666;
+}
+
+#board2 {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    border: solid 1px white;
+    position: relative;
+}
+
+#board2 td {
+    width: 10%;
+    height: 10%;
+    border: solid 1px white;
+    position: relative;
+}
+
+.restartBtn {
+    position: relative;
+    background-color: orange;
+    top: 10px;
+    left: 32%;
+    cursor: pointer;
+    font-family: 'Bangers', cursive;
+}
+
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+    /* TODO: make into circles */
+    background-color: blue;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0px width: 90%;
+    height: 95%;
+    width: 95%;
+}
+
+.piece2 {
+    /* TODO: make into circles */
+    background-color: red;
+    border-radius: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+    height: 95%;
+}
+
+.winner {
+    position: absolute;
+    background-color: transparent;
+    height: 30vh;
+    width: 30vw;
+    top: 30vh;
+    left: 35%;
+}
+
+.winner p {
+    font-family: 'Bangers', cursive;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    font-size: 30px;
+    left: 20%;
+    z-index: 5;
+}
+
+.clickHere {
+    position: absolute;
+    background-color: transparent;
+    height: 20vh;
+    width: 15vw;
+    top: 0vh;
+    right: 100vw;
+}
+
+.clickHere p {
+    font-family: 'Bangers', cursive;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    font-size: 20px;
+}
+
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+    border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+    background-color: gold;
+}
